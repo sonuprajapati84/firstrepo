@@ -1,13 +1,13 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const routesManager = require('./routes/index');
+const index = require('./routes/index');
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 
 
-app.use(routesManager);
+app.use(index);
 
 
 const PORT = process.env.PORT || 3000;
